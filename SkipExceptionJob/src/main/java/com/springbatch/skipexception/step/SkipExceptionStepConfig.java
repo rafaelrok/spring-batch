@@ -16,7 +16,7 @@ import com.springbatch.skipexception.dominio.Cliente;
 public class SkipExceptionStepConfig {
 	@Autowired
 	private StepBuilderFactory stepBuilderFactory;
-	
+
 	@Bean
 	public Step skipExceptionStep(ItemReader<Cliente> skipExceptionReader, ItemWriter<Cliente> skipExceptionWriter) {
 		return stepBuilderFactory
@@ -25,7 +25,7 @@ public class SkipExceptionStepConfig {
 				.reader(skipExceptionReader)
 				.writer(skipExceptionWriter)
 				.faultTolerant()
-				.skip(Exception.class)
+				.skip(Exception.class) //Deve ser configurado uma regra de skip para a exceção que será lançada, pois deve haver uma regra para cada negócio.
 				.skipLimit(2)
 				.build();
 	}

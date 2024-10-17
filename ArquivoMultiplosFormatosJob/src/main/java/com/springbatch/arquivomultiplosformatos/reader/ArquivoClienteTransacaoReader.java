@@ -9,7 +9,7 @@ import org.springframework.batch.item.ItemStreamReader;
 
 public class ArquivoClienteTransacaoReader implements ItemStreamReader<Cliente> {
   private Object objAtual;
-  private ItemStreamReader<Object> delegate;
+  private final ItemStreamReader<Object> delegate;
 
 
   public ArquivoClienteTransacaoReader(ItemStreamReader<Object> delegate) {
@@ -50,5 +50,5 @@ public class ArquivoClienteTransacaoReader implements ItemStreamReader<Cliente> 
     objAtual = delegate.read();
     return objAtual;
   }
-  
+
 }

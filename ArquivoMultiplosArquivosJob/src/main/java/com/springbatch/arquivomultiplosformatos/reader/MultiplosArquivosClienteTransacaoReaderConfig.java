@@ -11,6 +11,7 @@ import org.springframework.core.io.Resource;
 
 @Configuration
 public class MultiplosArquivosClienteTransacaoReaderConfig {
+
   @SuppressWarnings({"rawtypes", "unchecked"})
   @StepScope
   @Bean
