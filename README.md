@@ -1,13 +1,12 @@
 # SPRING-BATCH
 <p align="center">
-     <img alt="Repository size" src="https://img.shields.io/github/repo-size/rafaelrok/spring-batch?logo=github">
-      <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https://github.com/rafaelrok/spring-batch/edit/main/README.md">
+    <img alt="GitHub branch status" src="https://img.shields.io/github/checks-status/rafaelrok/spring-batch/main">
      </a>  
      <a href="https://github.com/ms-sales/README.md/commits/master">
       <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rafaelrok/spring-batch">
      </a>
      <a href="https://github.com/rafaelrok/ms-sales/blob/main/LICENSE">
-      <img alt="License" src="https://img.shields.io/hexpm/l/apa?logo=mit">
+      <img alt="GitHub License" src="https://img.shields.io/github/license/rafaelrok/spring-batch?style=flat">
      </a>  
      <a href="https://github.com/tgmarinho/README-ecoleta/stargazers">
       <img alt="Stargazers" src="https://img.shields.io/github/stars/rafaelrok/spring-batch?style=social">
