@@ -48,6 +48,13 @@ Os componentes que compõe essa máquina de estados são exibidos na imagem abai
 
 ## Principais Recursos
 
+### Observação:
+>Para todos os projetos batch que envolve processamento de arquivos ou scripts deve ser configurado o parametro para indetificar o seu files da seguinte forma:
+ 
+```
+arquivoClientes=file:{NOME_DO_PROJETO}/files/clientes.txt
+```
+
 Para atender a diversos cenários, o Spring Batch conta com uma série de recursos que permitem a elaboração de uma solução que atende ao máximo seus requisitos funcionais e não funcionais. Vamos listar algumas delas:
 
 > #Leitura de banco de dados: Essa é uma funcionalidade essencial. Muitos *trabalhos* fazem leitura e escrita em banco de dados, por isso o Spring Batch já fornece [componentes](https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html#database) de acesso ao banco de forma diferenciada (paginada, em lote, transacional, …).
