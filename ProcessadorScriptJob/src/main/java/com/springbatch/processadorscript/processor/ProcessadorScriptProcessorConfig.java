@@ -15,8 +15,9 @@ public class ProcessadorScriptProcessorConfig {
 			.language("nashorn")
 			.scriptSource(
 				"var email = item.getEmail();" +
-				"var arquivoExiste = `ls | grep ${email}.txt`;" +
-				"if (!arquivoExiste) item; else null;")
+				"var arquivoExiste = `ls | grep ' ${email}.txt`;" +
+				"if (!arquivoExiste) item; else null;"
+			)
 			.build();
 	}
 }

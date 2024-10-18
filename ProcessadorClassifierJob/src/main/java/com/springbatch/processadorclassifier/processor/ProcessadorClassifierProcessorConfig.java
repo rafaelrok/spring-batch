@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ProcessadorClassifierProcessorConfig {
+
 	@SuppressWarnings({"rawtypes", "unchecked"})
 	@Bean
 	public ItemProcessor processadorClassifierProcessor() {
@@ -29,7 +30,7 @@ public class ProcessadorClassifierProcessorConfig {
 				else
 					return new TransacaoProcessor();
 			}
-			
+
 		};
 	}
 }
