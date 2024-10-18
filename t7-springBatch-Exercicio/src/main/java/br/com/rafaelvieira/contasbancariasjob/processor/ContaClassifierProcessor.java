@@ -10,7 +10,7 @@ import br.com.rafaelvieira.contasbancariasjob.dominio.Cliente;
 import br.com.rafaelvieira.contasbancariasjob.dominio.Conta;
 import br.com.rafaelvieira.contasbancariasjob.dominio.TipoConta;
 
-public class GeracaoContaClassifier implements Classifier<Cliente, ItemProcessor<?, ? extends Conta>> {
+public class ContaClassifierProcessor implements Classifier<Cliente, ItemProcessor<?, ? extends Conta>> {
 
 	private static final Map<TipoConta, ItemProcessor<Cliente, Conta>> processadores = new HashMap<>() {
         {
@@ -26,5 +26,4 @@ public class GeracaoContaClassifier implements Classifier<Cliente, ItemProcessor
 		TipoConta tipoConta = TipoConta.fromFaixaSalarial(cliente.getFaixaSalarial());
 		return processadores.get(tipoConta);
 	}
-
 }

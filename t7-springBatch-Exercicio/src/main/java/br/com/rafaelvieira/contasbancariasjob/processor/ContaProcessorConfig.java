@@ -9,11 +9,11 @@ import br.com.rafaelvieira.contasbancariasjob.dominio.Cliente;
 import br.com.rafaelvieira.contasbancariasjob.dominio.Conta;
 
 @Configuration
-public class GeracaoContaProcessorConfig {
+public class ContaProcessorConfig {
 	@Bean
 	ItemProcessor<Cliente, Conta> geracaoContaProcessor() {
 		return new ClassifierCompositeItemProcessorBuilder<Cliente, Conta>()
-				.classifier(new GeracaoContaClassifier())
+				.classifier(new ContaClassifierProcessor())
 				.build();
 	}
 }
