@@ -1,4 +1,4 @@
-package com.springbatch.arquivodelimitado.job;
+package com.springbatch.escritorarquivodelimitado.job;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;

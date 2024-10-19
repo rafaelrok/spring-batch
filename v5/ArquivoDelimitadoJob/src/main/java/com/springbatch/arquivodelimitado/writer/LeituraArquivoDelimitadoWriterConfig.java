@@ -1,10 +1,10 @@
-package com.springbatch.arquivodelimitado.writer;
+package com.springbatch.escritorarquivodelimitado.writer;
 
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.springbatch.arquivodelimitado.dominio.Cliente;
+import com.springbatch.escritorarquivodelimitado.dominio.Cliente;
 
 @Configuration
 public class LeituraArquivoDelimitadoWriterConfig {

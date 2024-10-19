@@ -1,4 +1,4 @@
-package com.springbatch.arquivodelimitado.step;
+package com.springbatch.escritorarquivodelimitado.step;
 
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.repository.JobRepository;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import com.springbatch.arquivodelimitado.dominio.Cliente;
+import com.springbatch.escritorarquivodelimitado.dominio.Cliente;
 
 @Configuration
 public class LeituraArquivoDelimitadoStepConfig {
