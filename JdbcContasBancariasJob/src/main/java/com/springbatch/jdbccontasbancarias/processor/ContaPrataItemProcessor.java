@@ -2,9 +2,9 @@ package com.springbatch.jdbccontasbancarias.processor;
 
 import org.springframework.batch.item.ItemProcessor;
 
-import com.springbatch.contasbancarias.dominio.Cliente;
-import com.springbatch.contasbancarias.dominio.Conta;
-import com.springbatch.contasbancarias.dominio.TipoConta;
+import com.springbatch.jdbccontasbancarias.dominio.Cliente;
+import com.springbatch.jdbccontasbancarias.dominio.Conta;
+import com.springbatch.jdbccontasbancarias.dominio.TipoConta;
 
 public class ContaPrataItemProcessor implements ItemProcessor<Cliente, Conta> {
 

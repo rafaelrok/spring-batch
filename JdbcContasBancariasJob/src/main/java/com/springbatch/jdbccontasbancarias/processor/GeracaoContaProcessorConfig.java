@@ -5,8 +5,8 @@ import org.springframework.batch.item.support.builder.ClassifierCompositeItemPro
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.springbatch.contasbancarias.dominio.Cliente;
-import com.springbatch.contasbancarias.dominio.Conta;
+import com.springbatch.jdbccontasbancarias.dominio.Cliente;
+import com.springbatch.jdbccontasbancarias.dominio.Conta;
 
 @Configuration
 public class GeracaoContaProcessorConfig {

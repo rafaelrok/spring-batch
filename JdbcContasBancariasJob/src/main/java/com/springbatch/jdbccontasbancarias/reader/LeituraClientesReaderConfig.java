@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
-import com.springbatch.contasbancarias.dominio.Cliente;
+import com.springbatch.jdbccontasbancarias.dominio.Cliente;
 
 @Configuration
 public class LeituraClientesReaderConfig {

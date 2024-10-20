@@ -4,7 +4,7 @@ import org.springframework.batch.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.springbatch.contasbancarias.dominio.Conta;
+import com.springbatch.jdbccontasbancarias.dominio.Conta;
 
 @Configuration
 public class ImpressaoContaWriterConfig {

@@ -6,9 +6,9 @@ import java.util.Map;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.classify.Classifier;
 
-import com.springbatch.contasbancarias.dominio.Cliente;
-import com.springbatch.contasbancarias.dominio.Conta;
-import com.springbatch.contasbancarias.dominio.TipoConta;
+import com.springbatch.jdbccontasbancarias.dominio.Cliente;
+import com.springbatch.jdbccontasbancarias.dominio.Conta;
+import com.springbatch.jdbccontasbancarias.dominio.TipoConta;
 
 @SuppressWarnings("serial")
 public class GeracaoContaClassifier implements Classifier<Cliente, ItemProcessor<?, ? extends Conta>> {
@@ -18,6 +18,7 @@ public class GeracaoContaClassifier implements Classifier<Cliente, ItemProcessor
 		put(TipoConta.OURO, new ContaOuroItemProcessor());
 		put(TipoConta.PLATINA, new ContaPlatinaItemProcessor());
 		put(TipoConta.DIAMANTE, new ContaDiamanteItemProcessor());
+		put(TipoConta.INVALIDA, new ContaInvalidaItemProcessor());
 	}};
 
 	@Override
